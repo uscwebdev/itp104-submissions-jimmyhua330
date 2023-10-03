@@ -4,45 +4,16 @@
 
 	<title>Jimmy Huang | Interests Page</title>
 
+	<link rel="stylesheet" href="main.css">
+
 	<style>
-        body {
-            margin: 0px;
-			background-color: grey;
-        }
 		#header {
-			background-image: url('img/1811370.jpg');
-			height: 500px;
-			background-size: cover;
-			background-position: center;
-			color: #FFF;
-			font-size: 1.5em;
-			text-align: center;
-			line-height: 490px;
-			text-shadow: 0px 0px 10px #000;
-            margin: 0px;
-			padding: 5px;
+   			background-image: url('img/1811370.jpg');
 		}
 		#container {
-			width: 900px;
-			/* margin-left: auto;
-			margin-right: auto; */
-            background-color: white;
-			padding: 15px;
-		}
-		#footer {
-			background-color: black;
-			color: #FFF;
-			text-align: center;
-			height: 50px;
-			line-height: 50px;
-			font-size: 0.8em;
-            margin-left: auto;
-			margin-right: auto;
-		}
-		.image {
-			width: 200px;
-			height: auto;
-			float: right;
+    		width: 800px;
+    		background-color: white;
+    		padding: 15px;
 		}
 		#sidebar {
 			background-color: whitesmoke;
@@ -50,6 +21,11 @@
 			padding: 15px;
 			border-right: 2px solid lightgrey;
 			border-left: 2px solid lightgrey;
+		}
+		.image {
+			width: 200px;
+			height: auto;
+			float: right;
 		}
 		#wrapper {
 			background-color: grey;
@@ -60,9 +36,20 @@
 			text-align: center;
 			font-style: italic
 		}
-		.image2 {
+		.thumbnail {
 			width: 100px;
 			height: auto;
+			opacity: 0.9;
+		}
+		.thumbnail:hover {
+			opacity: 1.0;
+		}
+		.img-container > p {
+			text-align: center;
+			visibility: hidden;
+		}
+		.thumbnail:hover + p {
+			visibility: visible;
 		}
 	</style>
 
@@ -73,24 +60,35 @@
 		<h1>League of Legends</h1>
 	</div> <!-- #header -->
 
+	<div id="navbar">
+		<a class="highlight-nav" href="assignment_05.html">Home</a>
+		<a href="gallery.html">Gallery</a>
+	</div>
+
 	<div id="wrapper">
 	
 	<div id="sidebar" class="text-center-italicize">
-		<img src="img/LoL_icon.jgp.png" alt="logo" class="image2">
-		<p>Logo</p>
+		<div class="img-container">
+			<img class="thumbnail" src="img/LoL_icon.jgp.png" alt="league-logo">
+			<p>League Logo</p>
+		</div>
 
-		<img src="img/Champion_Mastery_Level_7_Flair.jpg" alt="Mastery 7" class="image2">
-		<p>Mastery 7</p>
+		<div class="img-container">
+			<img class="thumbnail" src="img/Champion_Mastery_Level_7_Flair.jpg" alt="Mastery 7">
+			<p>Mastery 7</p>
+		</div>
 
-		<img src="img/Poro_Render.jpg" alt="Poro" class="image2">
-		<p>Poro</p>
+		<div class="img-container">
+			<img class="thumbnail" src="img/Poro_Render.jpg" alt="Poro">
+			<p>Poro</p>
+		</div>
 	</div>
 	
 	<div id="container">
 		
         <h2>Summoner's Rift</h2>
 
-		<img src="img/download.jpg" alt="Summoner's-Rift" class="image">
+		<img class="image" src="img/download.jpg" alt="Summoner's-Rift">
 		
         <p>The map was given a graphical and technical update on May 23rd, 2012 and remade from scratch on November 12th, 2014. Seasonal updates would change parts of the map to incorporate new gameplay features.</p>
 
@@ -98,7 +96,7 @@
 		
         <h2>ARAM</h2>
 
-        <img src="img/aram.jpg" alt="ARAM" class="image">
+        <img class="image" src="img/aram.jpg" alt="ARAM">
 
         <p>All Random All Mid (<a target="_blank" href="https://leagueoflegends.fandom.com/es/wiki/ARAM">ARAM</a>) was originally played as a custom game on the Summoner's Rift map. Many players enjoyed the gameplay change, focusing only on 5v5 fights with no lane phase or jungling.  A small community of players crafted a set of standard rules for this type of game.  ARAM quickly became the most popular type of custom game and the community vocally asked Riot to formally support the game mode.  After some time, the Proving Grounds map was revamped from being solely for tutorials, to a playable one lane map.  Later, the Howling Abyss was released as a new ARAM map, replacing the Proving Grounds, along with the Freljord update and ARAM was was made an official queue.  This was the first and only time a custom game mode created by players became an official game type of League of Legends.</p>
 
@@ -106,7 +104,7 @@
 
 		<h2>TFT</h2>
 
-        <img src="img/TFT-Set-9-Release-Date.jpg" alt="TFT" class="image">
+        <img class="image" src="img/TFT-Set-9-Release-Date.jpg" alt="TFT">
 
 		<p><a target="_blank" href="https://www.leagueoflegends.com/en-au/news/game-updates/what-is-teamfight-tactics/">Teamfight Tactics</a> ( Master Tactics in EUW) or TFT is an auto-battle game mode. It was first introduced on June 10, 2019, became available on the PBE on June 18, 2019, and was released on the live servers on June 25-28, 2019.</p>
 
