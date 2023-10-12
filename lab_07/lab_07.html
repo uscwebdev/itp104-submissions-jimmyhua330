@@ -4,13 +4,53 @@
 	<title>Jimmy Huang | Image Puzzle</title>
 	
 	<style>
-		
+		body {
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h1 {
+			text-align: center;
+		}
+		.thumbnail {
+			width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content: center;
+			background-color: gray;
+			flex-wrap: wrap;
+		}
+		.thumbnail img {
+			width: 200px;
+			height: 200px;
+		}
+		.puzzle-piece {
+			position: relative;
+		}
+		.top {
+			top: -10px;
+		}
+		.left {
+			left: -10px;
+		}
+		.puzzle-piece {
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75)
+		}
 	</style>
 </head>
-
 <body>
-
-		
-
+	<h1>Tommy Trojan Puzzle</h1>
+	<div id="thumbnail">
+		<img class="puzzle-piece" src="img/PineTools.com_files/row-1-column-1.jpg" alt="Tommy-Trojan1">
+		<img class="puzzle-piece top" src="img/PineTools.com_files/row-1-column-2.jpg" alt="Tommy-Trojan2">
+		<img class="puzzle-piece left" src="img/PineTools.com_files/row-1-column-3.jpg" alt="Tommy-Trojan3">
+		<img class="puzzle-piece" src="img/PineTools.com_files/row-2-column-1.jpg" alt="Tommy-Trojan4">
+		<img class="puzzle-piece top" src="img/PineTools.com_files/row-2-column-2.jpg" alt="Tommy-Trojan5">
+		<img class="puzzle-piece left" src="img/PineTools.com_files/row-2-column-3.jpg" alt="Tommy-Trojan6">
+		<img class="puzzle-piece" src="img/PineTools.com_files/row-3-column-1.jpg" alt="Tommy-Trojan7">
+		<img class="puzzle-piece top" src="img/PineTools.com_files/row-3-column-2.jpg" alt="Tommy-Trojan8">
+		<img class="puzzle-piece left" src="img/PineTools.com_files/row-3-column-3.jpg" alt="Tommy-Trojan9">
+	</div>
 </body>
 </html>
