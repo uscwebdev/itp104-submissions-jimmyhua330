@@ -18,6 +18,7 @@
 			margin-left: auto;
 			margin-right: auto;
 			background-color: white;
+			text-align: center;
 		}
 		#gallery {
 			display: flex;
@@ -35,6 +36,29 @@
 		.thumbnail {
 			margin: 5px;
 			border: 1px solid #000;
+			overflow: hidden;
+			position: relative;
+		}
+		.overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			visibility: hidden;
+		}
+		.thumbnail:hover > .overlay {
+			visibility: visible;
+		}
+		.thumbnail > img {
+			height: 100%;
+			width: auto;
 		}
 		#image-1 {
 			width: 450px;
@@ -66,14 +90,14 @@
 		}
 		#image-8 {
 			width: 398px;
-			height: 300px;	
+			height: 316px;	
 		}
 		#image-9 {
-			width: 560px;
+			width: 480px;
 			height: 150px;
 		}
 		#image-10 {
-			width: 300px;
+			width: 380px;
 			height: 150px;
 		}
 	</style>
@@ -86,58 +110,77 @@
 	</div> <!-- #header -->
 
 	<div id="navbar">
-		<a href="assignment_06.html">Home</a>
-		<a class="highlight-nav" href="gallery.html">Gallery</a>
+		<ul id="top-menu">
+			<li>
+				<a href="assignment_06.html">Home</a>
+				<ul id="sub-menu">
+					<li><a href="assignment_06.html#summoners-rift">Summoner's Rift</a></li>
+					<li><a href="assignment_06.html#aram">ARAM</a></li>
+					<li><a href="assignment_06.html#tft">TFT</a></li>
+				</ul>
+			</li>
+		<li><a href="gallery.html">Gallery</a></li>
+		</ul>
 	</div>
 
 	<div id="container">
 		
-		<h2>League of Legends Images</h2>
+		<h2>League of Legends Champions</h2>
 		
 		<div id="gallery">
 
-			<div>
-				<img class="thumbnail" id="image-1" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-1" src="img/Skin_Splash_Classic_Riven.webp" alt="Riven">
+				<div class="overlay">Riven</div>
 			</div>
 
-			<div>
-				<img class="thumbnail" id="image-2" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-2" src="img/Skin_Splash_Classic_Lee_Sin.webp" alt="Lee Sin">
+				<div class="overlay">Lee Sin</div>
 			</div>
 			
-			<div>
-				<img class="thumbnail" id="image-3" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-3" src="img/Skin_Splash_Classic_Master_Yi.webp" alt="Master Yi">
+				<div class="overlay">Master Yi</div>
 			</div>
 
 		<div id="flex">
 
-			<div>
-				<img class="thumbnail" id="image-4" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-4" src="img/Skin_Splash_Classic_Thresh.webp" alt="Thresh">
+				<div class="overlay">Thresh</div>
 			</div>
 
-			<div>
-				<img class="thumbnail" id="image-5" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-5" src="img/Skin_Splash_Classic_Soraka.webp" alt="Soraka">
+				<div class="overlay">Soraka</div>
 			</div>
 			
-			<div>
-				<img class="thumbnail" id="image-6" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-6" src="img/Skin_Splash_Classic_Miss_Fortune.webp" alt="Miss Fortune">
+				<div class="overlay">Miss Fortune</div>
 			</div>
 
-			<div>
-				<img class="thumbnail" id="image-7" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-7" src="img/Skin_Splash_Classic_Jinx.webp" alt="Jinx">
+				<div class="overlay">Jinx</div>
 			</div>
 
 		</div> <!-- #flex -->
 
-			<div>
-				<img class="thumbnail" id="image-8" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-8" src="img/Skin_Splash_Classic_Teemo.webp" alt="Teemo">
+				<div class="overlay">Teemo</div>
 			</div>
 			
-			<div>
-				<img class="thumbnail" id="image-9" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-9" src="img/Skin_Splash_Classic_Yasuo.webp" alt="Yasuo">
+				<div class="overlay">Yasuo</div>
 			</div>
 
-			<div>
-				<img class="thumbnail" id="image-10" src="" alt="">
+			<div class="thumbnail">
+				<img id="image-10" src="img/Skin_Splash_Classic_Zed.webp" alt="Zed">
+				<div class="overlay">Zed</div>
 			</div>
 
 		</div> <!-- #gallery -->
