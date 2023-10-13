@@ -25,6 +25,7 @@
 			align-items: center;
 			justify-content: center;
 			flex-wrap: wrap;
+			position: relative;
 		}
 		#flex {
 			display: flex;
@@ -38,6 +39,36 @@
 			border: 1px solid #000;
 			overflow: hidden;
 			position: relative;
+		}
+		.thumbnail > .height-100 {
+			width: auto;
+			height: 100%;
+			position: relative;
+			right: 25px; 
+		}
+		.thumbnail > .master-yi {
+			width: auto;
+			height: 100%;
+			position: relative;
+			right: 50px; 
+		}
+		.thumbnail > .teemo {
+			width: auto;
+			height: 100%;
+			position: relative;
+			right: 130px; 
+		}
+		.thumbnail > .width-100 {
+			width: 100%;
+			height: auto;
+			position: relative;
+			bottom: 20px;
+		}
+		.thumbnail > .yasuo {
+			width: 100%;
+			height: auto;
+			position: relative;
+			bottom: 50px;
 		}
 		.overlay {
 			position: absolute;
@@ -55,10 +86,6 @@
 		}
 		.thumbnail:hover > .overlay {
 			visibility: visible;
-		}
-		.thumbnail > img {
-			height: 100%;
-			width: auto;
 		}
 		#image-1 {
 			width: 450px;
@@ -125,61 +152,61 @@
 
 	<div id="container">
 		
-		<h2>League of Legends Champions</h2>
+		<h2>Popular Champions</h2>
 		
 		<div id="gallery">
 
-			<div class="thumbnail">
-				<img id="image-1" src="img/Skin_Splash_Classic_Riven.webp" alt="Riven">
+			<div class="thumbnail" id="image-1">
+				<img class="width-100" src="img/Skin_Splash_Classic_Riven.webp" alt="Riven">
 				<div class="overlay">Riven</div>
 			</div>
 
-			<div class="thumbnail">
-				<img id="image-2" src="img/Skin_Splash_Classic_Lee_Sin.webp" alt="Lee Sin">
+			<div class="thumbnail" id="image-2">
+				<img class="height-100" src="img/Skin_Splash_Classic_Lee_Sin.webp" alt="Lee Sin">
 				<div class="overlay">Lee Sin</div>
 			</div>
 			
-			<div class="thumbnail">
-				<img id="image-3" src="img/Skin_Splash_Classic_Master_Yi.webp" alt="Master Yi">
+			<div class="thumbnail" id="image-3">
+				<img class="master-yi" src="img/Skin_Splash_Classic_Master_Yi.webp" alt="Master Yi">
 				<div class="overlay">Master Yi</div>
 			</div>
 
 		<div id="flex">
 
-			<div class="thumbnail">
-				<img id="image-4" src="img/Skin_Splash_Classic_Thresh.webp" alt="Thresh">
+			<div class="thumbnail" id="image-4">
+				<img class="height-100" src="img/Skin_Splash_Classic_Thresh.webp" alt="Thresh">
 				<div class="overlay">Thresh</div>
 			</div>
 
-			<div class="thumbnail">
-				<img id="image-5" src="img/Skin_Splash_Classic_Soraka.webp" alt="Soraka">
+			<div class="thumbnail" id="image-5">
+				<img class="height-100" src="img/Skin_Splash_Classic_Soraka.webp" alt="Soraka">
 				<div class="overlay">Soraka</div>
 			</div>
 			
-			<div class="thumbnail">
-				<img id="image-6" src="img/Skin_Splash_Classic_Miss_Fortune.webp" alt="Miss Fortune">
+			<div class="thumbnail" id="image-6">
+				<img class="height-100" src="img/Skin_Splash_Classic_Miss_Fortune.webp" alt="Miss Fortune">
 				<div class="overlay">Miss Fortune</div>
 			</div>
 
-			<div class="thumbnail">
-				<img id="image-7" src="img/Skin_Splash_Classic_Jinx.webp" alt="Jinx">
+			<div class="thumbnail" id="image-7">
+				<img class="height-100" src="img/Skin_Splash_Classic_Jinx.webp" alt="Jinx">
 				<div class="overlay">Jinx</div>
 			</div>
 
 		</div> <!-- #flex -->
 
-			<div class="thumbnail">
-				<img id="image-8" src="img/Skin_Splash_Classic_Teemo.webp" alt="Teemo">
+			<div class="thumbnail" id="image-8">
+				<img class="teemo" src="img/Skin_Splash_Classic_Teemo.webp" alt="Teemo">
 				<div class="overlay">Teemo</div>
 			</div>
 			
-			<div class="thumbnail">
-				<img id="image-9" src="img/Skin_Splash_Classic_Yasuo.webp" alt="Yasuo">
+			<div class="thumbnail" id="image-9">
+				<img class="yasuo" src="img/Skin_Splash_Classic_Yasuo.webp" alt="Yasuo">
 				<div class="overlay">Yasuo</div>
 			</div>
 
-			<div class="thumbnail">
-				<img id="image-10" src="img/Skin_Splash_Classic_Zed.webp" alt="Zed">
+			<div class="thumbnail" id="image-10">
+				<img class="width-100" src="img/Skin_Splash_Classic_Zed.webp" alt="Zed">
 				<div class="overlay">Zed</div>
 			</div>
 
