@@ -9,19 +9,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<style>
-		img {
-			width: auto;
-      		height: 200px;
-		}
-		strong {
-      		background-color: purple;
-      		color:white;
-    	}
 		#container {
       		width: 950px;
       		margin-left: auto;
       		margin-right: auto;
+			padding: 15px;
     	}
+		img {
+			width: auto;
+      		height: 200px;
+		}
     	.wrapper {
       		display: flex;
       		width: 950px;
@@ -35,11 +32,27 @@
       		width: 460px;
       		padding: 15px;
     	}
-    	/* Tablets: Screen Sizes ≤ 991px */
-    	@media (max-width: 991px) {
-      		/* All CSS here is for tablets & smaller */
+		strong {
+      		background-color: purple;
+      		color:white;
+    	}
 
-   		}
+		/* Mobile: Screen Sizes ≤ 767px */
+		@media (max-width: 767px) {
+			#container, .wrapper {
+      			width: auto;
+				flex-direction: column;
+    		}
+
+			img {
+				width: auto;
+      			height: 200px;
+			}
+
+			.left, .right {
+      			width: auto;
+			}
+		}
 	</style>
 
 </head>
