@@ -1,87 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Jimmy Huang | Student Page</title>
-    <style>
-        img {
-            width: auto;
-            height: 200px;
-        }
-        strong {
-            background-color: purple;
-            color:white;
-        }
-        #container {
-          width: 950px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .wrapper {
-          display: flex;
-          width: 950px;
-          justify-content: center;
-          /* background-color: lightblue; */
-        }
-        .left {
-          width: 460px;
-          padding: 15px;
-          /* background-color: lightgreen; */
-        }
-        .right {
-          width: 460px;
-          padding: 15px;
-          /* background-color: lightpink; */
-        }
-    </style>
-  </head>
-  <body>
-  <div id="container">  
-    <h1>Jimmy Huang</h1>
-    <p><a href="mailto:jimmyhua@usc.edu">jimmyhua@usc.edu</a></p>
-  <hr>
-  <div class="wrapper">
-  <div class="left">  
-    <p>Favorite color: <strong>Purple</strong></p>
-    <p>Favorite website: <a target="_blank" href="https://www.youtube.com">YouTube</a></p>
-    <p>Favorite activity:</p>
-    <img src="https://news.northwestern.edu/assets/Stories/2022/12/sleeping1940__FitMaxWzk3MCw2NTBd.jpg" alt="Favorite Activity: Sleep">
-  </div> <!-- left column -->
-  <div class="right"> 
-    <p>Fall 2023 Schedule:</p>
-    <ul>
-        <li>BUAD 281: Introduction to Managerial Accounting</li>
-        <li>BUAD 308: Advanced Business Finance</li>
-        <li>ANTH 140: Mesoamerican Cosmovision and Culture</li>
-        <li>BISC 102: Humans and Their Environment</li>
-        <li>ITP 104: Introduction to Web Development</li>
-    </ul>
-  </div> <!-- right column -->
-  </div> <!-- wrapper -->
-    <hr>
-  <div class="wrapper">
-  <div class="left"> 
-    <p>Assignments:</p>
-    <ul>
-        <li><a target="_blank" href="assignment_01/assignment_01.html">Assignment 1: Student Resume</a></li>
-        <li><a target="_blank" href="assignment_02/assignment_02.html">Assignment 2: Interests Page</a></li>
-        <li><a target="_blank" href="assignment_03/assignment_03.html">Assignment 3: Two-Column Interests Page</a></li>
-        <li><a target="_blank" href="assignment_04/assignment_04.html">Assignment 4: Calendar</a></li>
-        <li><a target="_blank" href="assignment_05/assignment_05.html">Assignment 5: Interests Page Gallery Layout</a></li>
-        <li><a target="_blank" href="assignment_06/assignment_06.html">Assignment 6: Fonts, Drop-down Menu, Overlay Captions</a></li>
-    </ul>
-  </div> <!-- left column -->
-  <div class="right"> 
-    <p>Labs:</p>
-    <ul>
-        <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
-        <li><a target="blank" href="lab_03/lab_03.html">Lab 3: Student Resume</a> </li>
-        <li><a target="_blank" href="index.html">Lab 4: Updated Student Page</a></li>
-        <li><a target="_blank" href="lab_05/lab_05.html">Lab 5: Form Page</a></li>
-        <li><a target="_blank" href="lab_06/lab_06.html">Lab 6: Simple Photo Gallery</a></li>
-        <li><a target="_blank" href="lab_07/lab_07.html">Lab 7: Image Puzzle</a></li>
-    </ul>
-  </div> <!-- right column -->
-  </div> <!-- wrapper -->
-  </div> <!-- container -->
-  </body>
+<head>
+
+	<title>Jimmy Huang | Student Page</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		img {
+			width: auto;
+      		height: 200px;
+		}
+		strong {
+      		background-color: purple;
+      		color:white;
+    	}
+		#container {
+      		width: 950px;
+      		margin-left: auto;
+      		margin-right: auto;
+    	}
+    	.wrapper {
+      		display: flex;
+      		width: 950px;
+      		justify-content: center;
+    	}
+    	.left {
+      		width: 460px;
+      		padding: 15px;
+    	}
+    	.right {
+      		width: 460px;
+      		padding: 15px;
+    	}
+    	/* Tablets: Screen Sizes ≤ 991px */
+    	@media (max-width: 991px) {
+      		/* All CSS here is for tablets & smaller */
+
+   		}
+	</style>
+
+</head>
+<body>
+
+	<div id="container">  
+		<h1>Jimmy Huang</h1>
+		<p><a href="mailto:jimmyhua@usc.edu">jimmyhua@usc.edu</a></p>
+		
+		<hr>
+	
+		<div class="wrapper">
+		
+			<div class="left">  
+		  		<p>Favorite color: <strong>Purple</strong></p>
+		  		<p>Favorite website: <a target="_blank" href="https://www.youtube.com">YouTube</a></p>
+		  		<p>Favorite activity:</p>
+		  		<img src="https://news.northwestern.edu/assets/Stories/2022/12/sleeping1940__FitMaxWzk3MCw2NTBd.jpg" alt="Favorite Activity: Sleep">
+			</div> <!-- left column -->
+	
+			<div class="right"> 
+		  		<p>Fall 2023 Schedule:</p>
+		  		<ul>
+			  		<li>BUAD 281: Introduction to Managerial Accounting</li>
+			  		<li>BUAD 308: Advanced Business Finance</li>
+			  		<li>ANTH 140: Mesoamerican Cosmovision and Culture</li>
+			  		<li>BISC 102: Humans and Their Environment</li>
+			  		<li>ITP 104: Introduction to Web Development</li>
+		  		</ul>
+			</div> <!-- right column -->
+
+		</div> <!-- wrapper -->
+
+		<hr>
+
+		<div class="wrapper">
+
+			<div class="left"> 
+		  		<p>Assignments:</p>
+		  		<ul>
+			  		<li><a target="_blank" href="assignment_01/assignment_01.html">Assignment 1: Student Resume</a></li>
+			  		<li><a target="_blank" href="assignment_02/assignment_02.html">Assignment 2: Interests Page</a></li>
+			  		<li><a target="_blank" href="assignment_03/assignment_03.html">Assignment 3: Two-Column Interests Page</a></li>
+			  		<li><a target="_blank" href="assignment_04/assignment_04.html">Assignment 4: Calendar</a></li>
+			  		<li><a target="_blank" href="assignment_05/assignment_05.html">Assignment 5: Interests Page Gallery Layout</a></li>
+			  		<li><a target="_blank" href="assignment_06/assignment_06.html">Assignment 6: Fonts, Drop-down Menu, Overlay Captions</a></li>
+		  		</ul>
+			</div> <!-- left column -->
+		
+			<div class="right"> 
+		  		<p>Labs:</p>
+		  		<ul>
+			  		<li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
+			  		<li><a target="blank" href="lab_03/lab_03.html">Lab 3: Student Resume</a> </li>
+					<li><a target="_blank" href="index.html">Lab 4: Updated Student Page</a></li>
+					<li><a target="_blank" href="lab_05/lab_05.html">Lab 5: Form Page</a></li>
+					<li><a target="_blank" href="lab_06/lab_06.html">Lab 6: Simple Photo Gallery</a></li>
+					<li><a target="_blank" href="lab_07/lab_07.html">Lab 7: Image Puzzle</a></li>
+		  		</ul>
+			</div> <!-- right column -->
+		
+		</div> <!-- wrapper -->
+
+	  </div> <!-- container -->
+
+</body>
 </html>
